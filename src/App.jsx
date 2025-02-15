@@ -12,24 +12,19 @@ import Amenidades from "./sections/Amenidades";
 import Galeria from "./sections/Galeria";
 import Hospedaje from "./sections/Hospedaje";
 import Noninos from "./sections/Noninos";
+import { Route, Routes } from "react-router";
+import HomePage from "./sections/pages/HomePage";
+import RSVPList from "./sections/pages/asistencia";
 
 export default function App() {
 
   return (
     <>
+<Routes>
+  <Route path="/" element={<HomePage/>} />
+  <Route path="/asistencia" element={<RSVPList/>} />
+</Routes>
      
-      <Contador />
-      <Padres />
-      <Dedicatoria />
-      <Itinerario />
-      <Dresscode />
-      <MesaDeRegalos />
-      <Noninos />
-      <Hospedaje />
-      <Galeria />
-      <Amenidades />
-      <Asistencia />
-      <Footer />
     </>
   );
 }
