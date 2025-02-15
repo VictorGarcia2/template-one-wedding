@@ -37,18 +37,18 @@ export default function Itinerario() {
  
   return (
     <>
-      <div className="w-full mx-auto  "  >
+      <div className="w-full mx-auto  h-full"  >
         <img
           className="absolute  object-cover opacity-55 h-[1600px] -z-10"
           src="/public/bg.jpg"
           alt=""
         />
-        <ol class=" mx-20 border-s border-gray-700 pt-96 ">
+        <ol class=" mx-20 border-s border-gray-700 pt-96  ">
           {list &&
             list?.map((lista) => (
               <motion.div style={{ y }}>
-                <li class=" mx-10 flex flex-col w-full justify-center   mb-40">
-                  <span class="  w-10 h-10 mb-5   -ms-26  text-center    absolute">
+                <li class={ ` ${lista.id === 4 ? "pb-0":"pb-50"} mx-10 flex flex-col w-full justify-center -mt-40 mb-20` }>
+                  <span class="  w-10 h-10 mb-5   -ms-26  text-center   absolute">
                     <p className="font-display text-center">4pm</p>
                   </span>
                   <span class=" flex mx-auto justify-center w-14 mb-5  rounded-full start-10 ring-3 bg-white  ring-green-950">
@@ -62,7 +62,7 @@ export default function Itinerario() {
                   </p>
                   <div className="mx-auto ">
                     <a
-                      className="bg-green-700 text-center px-4 py-2 text-white "
+                      className="bg-[#859382] text-center px-4 py-2 rounded text-white "
                       href=""
                     >
                       Ver mapa

@@ -6,7 +6,7 @@ export default function Contador() {
   return (
     <div className="">
       <div className="flex flex-col items-center  ">
-        <h1 className=" text-white mt-20 text-6xl absolute font-display">
+        <h1 className="animate-pulse text-white mt-20 text-6xl absolute font-display">
           {" "}
           Victor & <br /> Marilyn
         </h1>
