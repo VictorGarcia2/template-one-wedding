@@ -2,29 +2,67 @@ import React from "react";
 
 export default function Galeria() {
   return (
-    <div>
-      <div className="bg-[#859382] text-center px-10 py-2 rounded text-white ">
-        <p>Galería</p>
-        <hr className="w-72" />
-        <div className=" grid grid-cols-2  gap-3">
-          <div>
-            <img src="/public/pexels-emma-bauso-1183828-2253870.jpg" alt="" />
+    <>
+      <div>
+        <div className="bg-gray-50 text-center px-10 py-2 rounded text-white pb-9 ">
+          <p className="font-display text-3xl py-6 text-[#859382]">Galería</p>
+          <hr className="w-72 mx-auto" />
+          <div class="grid grid-cols-2 md:grid-cols-4 mt-4 gap-4">
+            <div class="grid gap-4">
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""></img>
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""></img>
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""></img>
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt=""></img>
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""></img>
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""></img>
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt=""></img>
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt=""></img>
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt=""></img>
+              </div>
+            </div>
+            <div class="grid gap-4">
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt=""></img>
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt=""></img>
+              </div>
+              <div>
+                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt=""></img>
+              </div>
+            </div>
           </div>
-          <div>
-          <img src="/public/pexels-pixabay-265722.jpg" alt="" />
-          </div>
-          <div>
-          <img src="/public/pexels-emma-bauso-1183828-2253870.jpg" alt="" />
-          </div>
+
+          <hr className="w-73 text-white mx-auto my-9 " />
+          <p className="font-display text-3xl text-[#859382]">SHARE YOUR MOMENTS</p>
+          <p className="font-display text-base text-[#859382] ">
+            Te compartimos este espacio en donde podrás subir fotos y videos de
+            los mejores momentos de nuestra boda:
+          </p>
+          <a className="bg-[#859382]  mt-3.5 inline-block text-center px-4 py-2 rounded text-white " href="">CARGAR FOTOS Y VIDEOS</a>
         </div>
-        <hr />
-        <p>SHARE YOUR MOMENTS</p>
-        <p>
-          Te compartimos este espacio en donde podrás subir fotos y videos de
-          los mejores momentos de nuestra boda:
-        </p>
-        <a href="">CARGAR FOTOS Y VIDEOS</a>
       </div>
-    </div>
+    </>
   );
 }

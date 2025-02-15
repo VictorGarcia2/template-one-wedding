@@ -54,7 +54,7 @@ export default function Itinerario() {
                   <span class=" flex mx-auto justify-center w-14 mb-5  rounded-full start-10 ring-3 bg-white  ring-green-950">
                     <img className="p-2" src={lista.img} alt="" />
                   </span>
-                  <h3 class="flex items-center mb-1 text-4xl mx-auto font-display font-light ">
+                  <h3 class="flex items-center mb-1 text-4xl mx-auto font-display font-300 ">
                     {lista.tittle}
                   </h3>
                   <p class="mb-4 text-2xl w-56 text-center font-display italic font-light mx-auto ">

@@ -16,13 +16,11 @@ export default function Contador() {
           <CountdownTimer targetDate={targetDate} />
           <hr className="mx-auto text-white w-80 static"/>
         </div>
-       
         <img
           className=" object-cover   h-screen"
           src="/public/pexels-emma-bauso-1183828-2253870.jpg"
           alt=""
         />
-       
       </div>
     </div>
   );

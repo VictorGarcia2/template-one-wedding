@@ -5,7 +5,7 @@ import PinterestEmbed from "../components/Pinterest";
 
 export default function Dresscode() {
   return (
-    <div className="bg-gray-50 -mt-72">
+    <div className="bg-gray-50 -mt-60">
       <div className=" text-center flex flex-col gap-4 pt-10 justify-center">
         <p className="font-display text-3xl">DRESS CODE</p>
         <hr  className="w-60 mx-auto" />
