@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { db} from "../firebase/firebase";
+import { ref, push } from "firebase/database";
 
 export default function () {
   const [name, setName] = useState("");
@@ -14,6 +16,7 @@ export default function () {
     }
 
     // Guardar en Firebase
+    
     const rsvpRef = ref(db, "rsvps");
     const newRSVPRef = push(rsvpRef, { name, asistencia, guests });
 
