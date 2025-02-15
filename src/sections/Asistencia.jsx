@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { db} from "../firebase/firebase";
-import { ref, push } from "firebase/database";
+import { db, ref} from "../firebase/firebase";
+import  {push}  from "firebase/database";
 
 export default function () {
   const [name, setName] = useState("");
@@ -71,12 +71,12 @@ export default function () {
             Pase:
             <select className="border mt-5 border-gray-300 p-3" id="cars">
               <option value="">Selecciona una opción ▼ </option>
-              <option value={setGuests(1)}>Solo Yo</option>
-              <option value={setGuests(2)}>2</option>
-              <option value={setGuests(3)}>3</option>
-              <option value={setGuests(4)}>4</option>
-              <option value={setGuests(5)}>4</option>
-              <option value={setGuests(6)}>6</option>
+              <option value={()=> setGuests(1)}>Solo Yo</option>
+              <option value={()=> setGuests(2)}>2</option>
+              <option value={()=> setGuests(3)}>3</option>
+              <option value={()=> setGuests(4)}>4</option>
+              <option value={()=> setGuests(5)}>4</option>
+              <option value={()=> setGuests(6)}>6</option>
             </select>
           </label>
           <button className="my-5 bg-[#859382] mt-3.5 inline-block text-center px-4 py-2 rounded text-white " type="submit"> CONFIRMAR</button>
