@@ -42,34 +42,29 @@ export default function () {
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col">
           <p className="font-display text-start">¿Asisitirás?</p>
-          <label
-            htmlFor="asistencia"
-            name="asistencia"
-            className="text-start font-display "
-          >
-            <input
-              className="mx-2"
-              type="radio"
-              value="si"
-              name="asistencia"
-              id=""
-            />
-            Si
-          </label>
-          <label
-            htmlFor="asistencia"
-            name="asistencia"
-            className="text-start  font-display"
-          >
-            <input
-              className="mx-2"
-              type="radio"
-              value="no"
-              name="asistencia"
-              id=""
-            />
-            No
-          </label>
+          <label htmlFor="asistencia" className="text-start font-display">
+  <input
+    className="mx-2"
+    type="radio"
+    value="si"
+    name="asistencia"
+    checked={asistencia === "si"} // Marca el radio si el estado es "si"
+    onChange={(e) => setAsistencia(e.target.value)} // Actualiza el estado
+  />
+  Si
+</label>
+<label htmlFor="asistencia" className="text-start font-display">
+  <input
+    className="mx-2"
+    type="radio"
+    value="no"
+    name="asistencia"
+    checked={asistencia === "no"} // Marca el radio si el estado es "no"
+    onChange={(e) => setAsistencia(e.target.value)} // Actualiza el estado
+  />
+  No
+</label>
+
           <input
             onChange={(e) => setName(e.target.value)}
             className="border my-4 border-gray-300 p-3"
