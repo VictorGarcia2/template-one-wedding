@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { db, ref} from "../firebase/firebase";
-import  {push}  from "firebase/database";
+import { db, ref } from "../firebase/firebase";
+import { push } from "firebase/database";
 
 export default function () {
   const [name, setName] = useState("");
@@ -16,7 +16,7 @@ export default function () {
     }
 
     // Guardar en Firebase
-    
+
     const rsvpRef = ref(db, "rsvps");
     const newRSVPRef = push(rsvpRef, { name, asistencia, guests });
 
@@ -25,7 +25,7 @@ export default function () {
       id: newRSVPRef.key,
       name,
       asistencia,
-      guests
+      guests,
     });
 
     setName("");
@@ -47,7 +47,13 @@ export default function () {
             name="asistencia"
             className="text-start font-display "
           >
-            <input className="mx-2" type="radio" value="si" name="asistencia" id="" />
+            <input
+              className="mx-2"
+              type="radio"
+              value="si"
+              name="asistencia"
+              id=""
+            />
             Si
           </label>
           <label
@@ -55,11 +61,17 @@ export default function () {
             name="asistencia"
             className="text-start  font-display"
           >
-            <input className="mx-2" type="radio" value="no" name="asistencia" id="" />
+            <input
+              className="mx-2"
+              type="radio"
+              value="no"
+              name="asistencia"
+              id=""
+            />
             No
           </label>
           <input
-           onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
             className="border my-4 border-gray-300 p-3"
             type="text"
             name=""
@@ -69,17 +81,27 @@ export default function () {
           <label className="text-start font-display" htmlFor="">
             Número de personas confirmadas de acuerdo al número asignado en tu
             Pase:
-            <select className="border mt-5 border-gray-300 p-3" id="cars">
-              <option value="">Selecciona una opción ▼ </option>
-              <option value={()=> setGuests(1)}>Solo Yo</option>
-              <option value={()=> setGuests(2)}>2</option>
-              <option value={()=> setGuests(3)}>3</option>
-              <option value={()=> setGuests(4)}>4</option>
-              <option value={()=> setGuests(5)}>4</option>
-              <option value={()=> setGuests(6)}>6</option>
+            <select
+              className="border mt-5 border-gray-300 p-3"
+              value={guests} // Usa el estado actual
+              onChange={(e) => setGuests(Number(e.target.value))} // Actualiza el estado
+            >
+              <option value="">Selecciona una opción ▼</option>
+              <option value={1}>Solo Yo</option>
+              <option value={2}>2</option>
+              <option value={3}>3</option>
+              <option value={4}>4</option>
+              <option value={5}>5</option>
+              <option value={6}>6</option>
             </select>
           </label>
-          <button className="my-5 bg-[#859382] mt-3.5 inline-block text-center px-4 py-2 rounded text-white " type="submit"> CONFIRMAR</button>
+          <button
+            className="my-5 bg-[#859382] mt-3.5 inline-block text-center px-4 py-2 rounded text-white "
+            type="submit"
+          >
+            {" "}
+            CONFIRMAR
+          </button>
         </form>
       </div>
     </div>
