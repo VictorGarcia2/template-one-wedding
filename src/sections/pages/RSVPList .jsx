@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { db, onValue, ref } from "../../firebase/firebase";
 
@@ -21,32 +20,39 @@ const RSVPList = () => {
         setAttendees([]);
       }
     });
-
     return () => unsubscribe();
   }, []);
-
-  const totalGuests = attendees.reduce((sum, att) => sum + att.guests, 0);
-
+  console.log(attendees)
+  const totalGuests = attendees.reduce((total, attendee) => {
+    if (attendee.asistencia !== "no") {
+      return total + attendee.guests;
+    }
+    return total;
+  }, 0);
   return (
-    <div>
-      <h2>Lista de asistentes</h2>
-      <p>Total de personas confirmadas: {totalGuests}</p>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Nombre</th>
-            <th>Asistencia</th>
-            <th>Personas</th>
+    <div className="flex flex-col justify-center  px-10 bg-[#859382] text-white ">
+      <div className="h-screen  grid place-content-center">
+
+      <p className="py-2 text-9xl  text-center font-display italic">{totalGuests}</p>
+      <p className="py-2 text-4xl text-center font-display italic mb-50">Personas han confirmado asistencia</p>
+      </div>
+      <h2 className="font-display text-3xl py-3 text-center">Lista de invitados</h2>
+      <table className="border border-gray-300 text-center mb-20">
+        <thead className="border border-gray-300">
+          <tr className="font-display italic">
+            <th className="border border-gray-300">#</th>
+            <th className="border border-gray-300">Nombre</th>
+            <th className="border border-gray-300">Asistencia</th>
+            <th className="border border-gray-300">Personas</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="font-display rounded-4xl">
           {attendees.map((attendee, index) => (
             <tr key={attendee.id}>
-              <td>{index + 1}</td>
-              <td>{attendee.name}</td>
-              <td>{attendee.asistencia}</td>
-              <td>{attendee.guests}</td>
+              <td className="border  border-gray-300 p-2">{index + 1}</td>
+              <td className="border border-gray-300">{attendee.name}</td>
+              <td className="border border-gray-300">{attendee.asistencia}</td>
+              <td className="border border-gray-300">{attendee.guests}</td>
             </tr>
           ))}
         </tbody>
