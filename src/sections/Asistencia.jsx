@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { db, ref } from "../firebase/firebase";
 import { push } from "firebase/database";
 import AlertAsistencia from "../components/AlertAsistencia";
@@ -7,15 +7,19 @@ export default function () {
   const [name, setName] = useState("");
   const [asistencia, setAsistencia] = useState("");
   const [guests, setGuests] = useState(1);
-
- 
-
+  const [alerts, setAlerts] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!name || !asistencia || guests < 1) {
       alert("Por favor, completa todos los campos correctamente.");
       return;
     }
+
+    setAlerts(true);
+
+    setTimeout(() => {
+      setAlerts(false)
+    }, 3000);
     // Guardar en Firebase
     const rsvpRef = ref(db, "rsvps");
     const newRSVPRef = push(rsvpRef, { name, asistencia, guests });
@@ -29,13 +33,9 @@ export default function () {
     setName("");
     setAsistencia("");
     setGuests(1);
+    
   };
-  const [alerts, setAlerts] = useState(false)
-  const alert = ()=>{
-    if (name !== "" && asistencia !== "") {
-      setAlerts(true)
-    }
-  }
+
   return (
     <div className="items-center flex flex-col justify-center text-center ">
       <img src="pexels-emma-bauso-1183828-2253870.jpg" alt="" />
@@ -95,7 +95,6 @@ export default function () {
             </select>
           </label>
           <button
-            onClick={alert}
             className="my-5 bg-[#859382] mt-3.5 inline-block text-center px-4 py-2 rounded text-white "
             type="submit"
           >
@@ -103,11 +102,7 @@ export default function () {
           </button>
         </form>
       </div>
-      {
-        alerts&&
-          <AlertAsistencia alerts={alerts} setAlerts={setAlerts}/>  
-      }
+      {alerts && <AlertAsistencia alerts={alerts} setAlerts={setAlerts} />}
     </div>
-  
   );
 }

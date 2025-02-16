@@ -1,7 +1,7 @@
 import React from "react";
-export default function AlertAsistencia({alerts, setAlerts}) {
+export default function AlertAsistencia({alerts}) {
   return (
-    <div className={`${alerts ? "animate-fade animate-once animate-duration-1000 animate-delay-100 animate-ease-in" : ""} flex z-50 h-full  fixed top-0 items-center justify-center bg-gray-100`}>
+    <div className={`${alerts ? "animate-fade-in" : "hidden"} flex z-50 h-full  fixed top-0 items-center justify-center bg-gray-100`}>
       <div className="rounded-lg bg-gray-50 px-16 py-14">
         <div className="flex justify-center">
           <div className="rounded-full bg-green-200 p-6">
@@ -10,7 +10,7 @@ export default function AlertAsistencia({alerts, setAlerts}) {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="h-8 w-8 text-white"
               >
@@ -26,7 +26,6 @@ export default function AlertAsistencia({alerts, setAlerts}) {
         <h3 className="my-4 font-display ß text-center text-3xl font-semibold text-gray-700">
           ¡Gracias por confirmar tu asistencia!
         </h3>
-        <button className="bg-[#859382] font-display text-base text-white rounded-2xl" onClick={()=>setAlerts(false)}> Cerrar </button>
       </div>
     </div>
   );
