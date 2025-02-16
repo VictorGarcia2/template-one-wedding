@@ -4,7 +4,11 @@ import React from "react";
 export default function MesaDeRegalos() {
   return (
     <div className="bg-[#859382] text-white ">
-      <img className="w-full" src="/public/pexels-emma-bauso-1183828-2253870.jpg" alt="" />
+      <img
+        className="w-full"
+        src="pexels-emma-bauso-1183828-2253870.jpg"
+        alt=""
+      />
       <div className="flex flex-col justify-center items-center px-10 ">
         <p className="font-display text-3xl mt-10 ">MESA DE REGALOS</p>
         <p className="text-center font-display text-base mt-3 mb-5">
@@ -27,18 +31,16 @@ export default function MesaDeRegalos() {
             </div>
           )}
         >
+          <img 
+          src="liverpool-es-parte-de-mi-vida-logo-png_seeklogo-259639.png"
+          alt="image 1" className="h-full w-full object-cover" />
           <img
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-            alt="image 1"
-            className="h-full w-full object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+            src="el-palacio-de-hierro.svg"
             alt="image 2"
             className="h-full w-full object-cover"
           />
           <img
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+            src="01cada77a0a7d326d85b7969fe26a728.jpg"
             alt="image 3"
             className="h-full w-full object-cover"
           />

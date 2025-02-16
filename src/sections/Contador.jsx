@@ -18,7 +18,7 @@ export default function Contador() {
         </div>
         <img
           className=" object-cover   h-screen"
-          src="/public/pexels-emma-bauso-1183828-2253870.jpg"
+          src="pexels-emma-bauso-1183828-2253870.jpg"
           alt=""
         />
       </div>
