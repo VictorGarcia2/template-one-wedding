@@ -23,7 +23,7 @@ export default function MesaDeRegalos() {
                 <span
                   key={i}
                   className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                    activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                    activeIndex === i ? "w-8 bg-black" : "w-4 bg-white/50"
                   }`}
                   onClick={() => setActiveIndex(i)}
                 />
@@ -33,16 +33,16 @@ export default function MesaDeRegalos() {
         >
           <img 
           src="liverpool-es-parte-de-mi-vida-logo-png_seeklogo-259639.png"
-          alt="image 1" className="h-full w-full object-cover" />
+          alt="image 1" className="h-80 w-80bject-cover" />
           <img
             src="el-palacio-de-hierro.svg"
             alt="image 2"
-            className="h-full w-full object-cover"
+            className="h-80 w-80 object-cover"
           />
           <img
             src="01cada77a0a7d326d85b7969fe26a728.jpg"
             alt="image 3"
-            className="h-full w-full object-cover"
+            className="h-80 w-80 object-cover"
           />
         </Carousel>
       </div>

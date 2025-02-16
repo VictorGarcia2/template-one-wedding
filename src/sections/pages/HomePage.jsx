@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Contador from "../Contador";
 import Padres from "../Padres";
 import Dedicatoria from "../Dedicatoria";
@@ -13,20 +13,46 @@ import Asistencia from "../Asistencia";
 import Footer from "../Footer";
 
 export default function HomePage() {
+  const [carga, setCarga] = useState(true);
+  const loading = () => {
+    <div className="fixed bg-amber-950 h-screen w-screen grid place-content-center">
+      <h1 className="font-display text-white -mt-24 text-6xl text-center">
+        Alex y Agata
+      </h1>
+    </div>;
+  };
+
+useEffect(() => {
+  setTimeout(() => {
+
+    setCarga(false)
+  }, 2000);
+}, [])
+
+
   return (
     <>
-      <Contador />
-      <Padres />
-      <Dedicatoria />
-      <Itinerario />
-      <Dresscode />
-      <MesaDeRegalos />
-      <Noninos />
-      <Hospedaje />
-      <Galeria />
-      <Amenidades />
-      <Asistencia />
-      <Footer />
+    {carga ?  <div className="fixed bg-[#859381] h-screen w-screen grid place-content-center">
+      <h1 className="font-display text-white -mt-24 text-6xl text-center">
+        Alex y Agata
+      </h1>
+    </div> : (
+      <div>
+        <Contador />
+        <Padres />
+        <Dedicatoria />
+        <Itinerario />
+        <Dresscode />
+        <MesaDeRegalos />
+        <Noninos />
+        <Hospedaje />
+        <Galeria />
+        <Amenidades />
+        <Asistencia />
+        <Footer />
+      </div>
+    )}
+      
     </>
   );
 }

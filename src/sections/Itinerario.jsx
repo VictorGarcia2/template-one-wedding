@@ -40,9 +40,10 @@ export default function Itinerario() {
       <div className="w-full mx-auto  h-full"  >
         <img
           className="absolute  object-cover opacity-55 h-[1600px] -z-10"
-          src="/public/bg.jpg"
+          src="bg.jpg"
           alt=""
         />
+        <p className="font-display items-center text-3xl">Itinerario</p>
         <ol class=" mx-20 border-s border-gray-700 pt-96  ">
           {list &&
             list?.map((lista) => (
