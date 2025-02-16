@@ -37,7 +37,7 @@ useEffect(() => {
         Alex y Agata
       </h1>
     </div> : (
-      <div>
+      <div className="animate-fade animate-duration-1000 animate-ease-in">
         <Contador />
         <Padres />
         <Dedicatoria />
