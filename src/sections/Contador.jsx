@@ -5,7 +5,7 @@ export default function Contador() {
   const targetDate = "2025-10-23T00:00:00";
   return (
    
-    <div className="">
+    <div className="animate-fade-left animate-once animate-duration-1000 animate-delay-1000 animate-ease-in">
       <div className="flex flex-col items-center  ">
         <h1 className="animate-pulse text-white mt-20 text-6xl absolute font-display">
           Alex & <br /> Agata
