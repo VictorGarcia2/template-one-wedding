@@ -24,7 +24,6 @@ export default function HomePage() {
 
 useEffect(() => {
   setTimeout(() => {
-
     setCarga(false)
   }, 2000);
 }, [])
@@ -32,12 +31,12 @@ useEffect(() => {
 
   return (
     <>
-    {carga ?  <div className="fixed bg-[#859381] h-screen w-screen grid place-content-center">
+    {carga ?  <div className=" fixed bg-[#859381] h-screen w-screen grid place-content-center">
       <h1 className="font-display text-white -mt-24 text-6xl text-center">
         Alex y Agata
       </h1>
     </div> : (
-      <div className="animate-fade animate-duration-1000 animate-ease-in">
+      <div className="animate-fade animate-duration-3000 animate-ease-in">
         <Contador />
         <Padres />
         <Dedicatoria />
