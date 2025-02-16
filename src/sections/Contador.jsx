@@ -7,7 +7,7 @@ export default function Contador() {
    
     <div className="animate-fade-left animate-once animate-duration-1000 animate-delay-1000 animate-ease-in">
       <div className="flex flex-col items-center  ">
-        <h1 className="animate-pulse text-white mt-20 text-6xl absolute font-display">
+        <h1 className=" text-white mt-20 text-6xl absolute font-display">
           Alex & <br /> Agata
         </h1>
         <div className="absolute  mt-[500px]  w-full ">

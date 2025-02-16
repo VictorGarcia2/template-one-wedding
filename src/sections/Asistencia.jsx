@@ -1,25 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { db, ref } from "../firebase/firebase";
 import { push } from "firebase/database";
+import AlertAsistencia from "../components/AlertAsistencia";
 
 export default function () {
   const [name, setName] = useState("");
   const [asistencia, setAsistencia] = useState("");
   const [guests, setGuests] = useState(1);
 
+ 
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (!name || !asistencia || guests < 1) {
       alert("Por favor, completa todos los campos correctamente.");
       return;
     }
-
     // Guardar en Firebase
-
     const rsvpRef = ref(db, "rsvps");
     const newRSVPRef = push(rsvpRef, { name, asistencia, guests });
-
     // Llamar a la función onRSVPSubmit que pasamos como props para actualizar el estado en el componente principal
     onRSVPSubmit({
       id: newRSVPRef.key,
@@ -27,11 +26,18 @@ export default function () {
       asistencia,
       guests,
     });
-
     setName("");
     setAsistencia("");
     setGuests(1);
   };
+  const [alerts, setAlerts] = useState(false)
+  const alert = ()=>{
+    if (name !== "" && asistencia !== "") {
+      setAlerts(true)
+      setName("")
+      setAsistencia("")
+    }
+  }
   return (
     <div className="items-center flex flex-col justify-center text-center ">
       <img src="pexels-emma-bauso-1183828-2253870.jpg" alt="" />
@@ -91,14 +97,19 @@ export default function () {
             </select>
           </label>
           <button
+            onClick={alert}
             className="my-5 bg-[#859382] mt-3.5 inline-block text-center px-4 py-2 rounded text-white "
             type="submit"
           >
-            {" "}
             CONFIRMAR
           </button>
         </form>
       </div>
+      {
+        alerts&&
+          <AlertAsistencia alerts={alerts} setAlerts={setAlerts}/>  
+      }
     </div>
+  
   );
 }
