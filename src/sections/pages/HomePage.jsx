@@ -25,7 +25,7 @@ export default function HomePage() {
 useEffect(() => {
   setTimeout(() => {
     setCarga(false)
-  }, 2000);
+  }, 1000);
 }, [])
 
 
@@ -36,7 +36,7 @@ useEffect(() => {
         Alex y Agata
       </h1>
     </div> : (
-      <div className="animate-fade animate-duration-4000 animate-ease-in">
+      <div className={`${carga? "": "animate-fade-left animate-once animate-duration-1000 animate-delay-1000 animate-ease-in"}`}>
         <Contador />
         <Padres />
         <Dedicatoria />
