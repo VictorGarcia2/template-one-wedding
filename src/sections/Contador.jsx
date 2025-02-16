@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CountdownTimer from "../components/CountdownTimer";
+import Aos from "aos";
 
 export default function Contador() {
   const targetDate = "2025-10-23T00:00:00";
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
    
     <div className="animate-fade-left animate-once animate-duration-1000 animate-delay-1000 animate-ease-in">
       <div className="flex flex-col items-center  ">
-        <h1 className=" text-white mt-20 text-6xl absolute font-display">
+        <h1 data-aos="fade-left" className=" text-white mt-20 text-6xl absolute font-display">
           Alex & <br /> Agata
         </h1>
         <div className="absolute  mt-[500px]  w-full ">
