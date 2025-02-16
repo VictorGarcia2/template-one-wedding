@@ -26,7 +26,7 @@ export default function AlertAsistencia({alerts, setAlerts}) {
         <h3 className="my-4 font-display ß text-center text-3xl font-semibold text-gray-700">
           ¡Gracias por confirmar tu asistencia!
         </h3>
-        <button className="bg-[#859382] text-white rounded-2xl" onClick={()=>setAlerts(false)}> Close</button>
+        <button className="bg-[#859382] font-display text-base text-white rounded-2xl" onClick={()=>setAlerts(false)}> Cerrar </button>
       </div>
     </div>
   );
