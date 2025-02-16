@@ -34,8 +34,6 @@ export default function () {
   const alert = ()=>{
     if (name !== "" && asistencia !== "") {
       setAlerts(true)
-      setName("")
-      setAsistencia("")
     }
   }
   return (
