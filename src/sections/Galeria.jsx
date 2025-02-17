@@ -1,11 +1,10 @@
 import React from "react";
-
 export default function Galeria() {
   return (
     <>
       <div>
-        <div className="bg-gray-50 text-center px-10 py-2 rounded text-white pb-9 ">
-          <p className="font-display text-3xl py-6 text-[#859382]">Galería</p>
+        <div className="bg-[#859382] text-center px-10 py-2 rounded text-white pb-9 ">
+          <p className="font-display text-3xl py-6 text-white" data-aos="zoom-in">Galería</p>
           <hr className="w-72 mx-auto" />
           <div className="grid grid-cols-2 md:grid-cols-4 mt-4 gap-4">
             <div className="grid gap-4">
@@ -55,12 +54,12 @@ export default function Galeria() {
           </div>
 
           <hr className="w-73 text-white mx-auto my-9 " />
-          <p className="font-display text-3xl text-[#859382]">SHARE YOUR MOMENTS</p>
-          <p className="font-display text-base text-[#859382] ">
+          <p className="font-display text-3xl text-white" data-aos="fade-right">SHARE YOUR MOMENTS</p>
+          <p className="font-display text-base text-white" data-aos="fade-left">
             Te compartimos este espacio en donde podrás subir fotos y videos de
             los mejores momentos de nuestra boda:
           </p>
-          <a className="bg-[#859382]  mt-3.5 inline-block text-center px-4 py-2 rounded text-white " href="">CARGAR FOTOS Y VIDEOS</a>
+          <a className="bg-white  mt-3.5 inline-block text-center px-4 py-2 rounded text-[#859382] " href="">CARGAR FOTOS Y VIDEOS</a>
         </div>
       </div>
     </>

@@ -5,7 +5,12 @@ import Aos from "aos";
 export default function Contador() {
   const targetDate = "2025-10-23T00:00:00";
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      offset: 200,
+      once: true,
+      duration: 800
+    }
+    );
   }, []);
 
   return (

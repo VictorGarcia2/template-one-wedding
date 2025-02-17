@@ -33,7 +33,7 @@ export default function Itinerario() {
     },
   ];
   const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], [0, -500]); // Ajusta los valores para el efecto parallax
+  const y = useTransform(scrollYProgress, [0, 1], [0, -600]); // Ajusta los valores para el efecto parallax
  
   return (
     <>
@@ -43,7 +43,7 @@ export default function Itinerario() {
           src="bg.jpg"
           alt=""
         />
-        <p className="font-display items-center text-5xl pt-7">Itinerario</p>
+        <p className="font-display items-center text-5xl pt-7 " data-aos="fade-right">Itinerario</p>
         <ol class=" mx-20 border-s border-gray-700 pt-96 -z-10 ">
           {list &&
             list?.map((lista) => (

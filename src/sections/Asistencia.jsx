@@ -6,7 +6,7 @@ import AlertAsistencia from "../components/AlertAsistencia";
 export default function () {
   const [name, setName] = useState("");
   const [asistencia, setAsistencia] = useState("");
-  const [guests, setGuests] = useState(1);
+  const [guests, setGuests] = useState();
   const [alerts, setAlerts] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,9 +14,7 @@ export default function () {
       alert("Por favor, completa todos los campos correctamente.");
       return;
     }
-
     setAlerts(true);
-
     setTimeout(() => {
       setAlerts(false)
     }, 3000);
@@ -32,10 +30,8 @@ export default function () {
     });
     setName("");
     setAsistencia("");
-    setGuests(1);
-    
+    setGuests(0);
   };
-
   return (
     <div className="items-center flex flex-col justify-center text-center ">
       <img src="pexels-emma-bauso-1183828-2253870.jpg" alt="" />
@@ -68,7 +64,6 @@ export default function () {
             />
             No
           </label>
-
           <input
             onChange={(e) => setName(e.target.value)}
             className="border my-4 border-gray-300 p-3"
@@ -81,11 +76,11 @@ export default function () {
             Número de personas confirmadas de acuerdo al número asignado en tu
             Pase:
             <select
-              className="border mt-5 border-gray-300 p-3"
+              className="border mt-5 border-gray-300 w-full p-3"
               value={guests} // Usa el estado actual
               onChange={(e) => setGuests(Number(e.target.value))} // Actualiza el estado
             >
-              <option value="">Selecciona una opción ▼</option>
+              <option value="">Selecciona una opción</option>
               <option value={1}>Solo Yo</option>
               <option value={2}>2</option>
               <option value={3}>3</option>
