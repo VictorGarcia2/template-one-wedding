@@ -1,4 +1,4 @@
-import { Carousel } from "@material-tailwind/react";
+import { Carousel, IconButton } from "@material-tailwind/react";
 import React from "react";
 
 export default function MesaDeRegalos() {
@@ -16,33 +16,70 @@ export default function MesaDeRegalos() {
           embargo, si desean obsequiarnos algo más, pueden hacerlo a través de:
         </p>
         <Carousel
-          className="rounded-xl w-72 mb-10 "
-          navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-              {new Array(length).fill("").map((_, i) => (
-                <span
-                  key={i}
-                  className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                    activeIndex === i ? "w-8 bg-black" : "w-4 bg-white/50"
-                  }`}
-                  onClick={() => setActiveIndex(i)}
+          className="rounded-xl mb-5"
+          prevArrow={({ handlePrev }) => (
+            <IconButton
+              variant="text"
+              color="black"
+              size="lg"
+              onClick={handlePrev}
+              className="!absolute top-2/4 left-4 -translate-y-2/4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="black"
+                className="h-6 w-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
                 />
-              ))}
-            </div>
+              </svg>
+            </IconButton>
+          )}
+          nextArrow={({ handleNext }) => (
+            <IconButton
+              variant="text"
+              color="black"
+              size="lg"
+              onClick={handleNext}
+              className="!absolute top-2/4 !right-4 -translate-y-2/4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="black"
+                className="h-6 w-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </IconButton>
           )}
         >
-          <img 
-          src="liverpool-es-parte-de-mi-vida-logo-png_seeklogo-259639.png"
-          alt="image 1" className="h-80 w-80bject-cover" />
           <img
             src="el-palacio-de-hierro.svg"
+            alt="image 1"
+            className="h-full w-96 object-cover"
+          />
+          <img
+            src="liverpool-es-parte-de-mi-vida-logo-png_seeklogo-259639.png"
             alt="image 2"
-            className="h-80 w-80 object-cover"
+            className="h-full w-96 object-cover"
           />
           <img
             src="01cada77a0a7d326d85b7969fe26a728.jpg"
             alt="image 3"
-            className="h-80 w-80 object-cover"
+            className="h-full w-96 object-cover"
           />
         </Carousel>
       </div>

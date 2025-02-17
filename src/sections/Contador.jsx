@@ -9,8 +9,7 @@ export default function Contador() {
   }, []);
 
   return (
-   
-    <div className="animate-fade-left animate-once animate-duration-1000 animate-delay-1000 animate-ease-in">
+    <div className="animate-fade-left animate-once animate-duration-1000 animate-delay-1000 animate-ease-in w-full">
       <div className="flex flex-col items-center  ">
         <h1 data-aos="fade-left" className=" text-white mt-20 text-6xl absolute font-display">
           Alex & <br /> Agata

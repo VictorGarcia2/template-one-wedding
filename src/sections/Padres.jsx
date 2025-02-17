@@ -6,7 +6,7 @@ export default function Padres() {
     <div className="w-80 bg-[#859382] mt-10 mb-10">
       {/* Título principal */}
       <p
-        className="font-display text-3xl text-center pt-10"
+        className="font-display font-300 text-3xl text-center pt-10"
         data-aos="fade-down" // Animación de fade hacia abajo
       >
         NUESTROS PADRES

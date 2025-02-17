@@ -37,14 +37,14 @@ export default function Itinerario() {
  
   return (
     <>
-      <div className="w-full mx-auto  h-full"  >
+      <div className="w-full mx-auto flex flex-col text-center  h-full"  >
         <img
           className="absolute  object-cover opacity-55 h-[1600px] -z-10"
           src="bg.jpg"
           alt=""
         />
-        <p className="font-display items-center text-3xl">Itinerario</p>
-        <ol class=" mx-20 border-s border-gray-700 pt-96  ">
+        <p className="font-display items-center text-5xl pt-7">Itinerario</p>
+        <ol class=" mx-20 border-s border-gray-700 pt-96 -z-10 ">
           {list &&
             list?.map((lista) => (
               <motion.div style={{ y }}>

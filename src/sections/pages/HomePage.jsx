@@ -36,7 +36,7 @@ useEffect(() => {
         Alex y Agata
       </h1>
     </div> : (
-      <div >
+      <div  className="overflow-x-hidden">
         <Contador />
         <Padres />
         <Dedicatoria />
