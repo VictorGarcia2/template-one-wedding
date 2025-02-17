@@ -13,30 +13,24 @@ import Asistencia from "../Asistencia";
 import Footer from "../Footer";
 
 export default function HomePage() {
-  const [carga, setCarga] = useState(true);
-  const loading = () => {
-    <div className="fixed bg-amber-950 h-screen w-screen grid place-content-center">
-      <h1 className="font-display text-white -mt-24 text-6xl text-center">
-        Alex y Agata
-      </h1>
-    </div>;
-  };
-
-useEffect(() => {
-  setTimeout(() => {
-    setCarga(false)
-  }, 1000);
-}, [])
-
+  const [carga, setCarga] = useState("visible");
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setCarga("invisible");
+    }, 1000);
+  }, []);
 
   return (
     <>
-    {carga ?  <div className=" fixed bg-[#859381] h-screen w-screen grid place-content-center">
-      <h1 className="font-display text-white -mt-24 text-6xl text-center">
-        Alex y Agata
-      </h1>
-    </div> : (
-      <div  className="overflow-x-hidden">
+      <div
+        className={` ${carga} animate-fade animate-ease-out  z-50 fixed bg-[#859381] h-screen w-screen grid place-content-center invisible`}
+      >
+        <h1 className="font-display text-white -mt-24 text-6xl text-center">
+          Alex y Agata
+        </h1>
+      </div>
+      <div className="overflow-x-hidden">
         <Contador />
         <Padres />
         <Dedicatoria />
@@ -50,8 +44,6 @@ useEffect(() => {
         <Asistencia />
         <Footer />
       </div>
-    )}
-      
     </>
   );
 }
