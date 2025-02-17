@@ -10,8 +10,8 @@ export default function MesaDeRegalos() {
         alt=""
       />
       <div className="flex flex-col justify-center items-center px-10 ">
-        <p className="font-display text-3xl mt-10 ">MESA DE REGALOS</p>
-        <p className="text-center font-display text-base mt-3 mb-5">
+        <p className="font-display text-3xl mt-10 " data-aos="fade-up">MESA DE REGALOS</p>
+        <p className="text-center font-display text-base mt-3 mb-5" data-aos="fade-right">
           Su presencia y compañía siempre será nuestro mejor regalo. Sin
           embargo, si desean obsequiarnos algo más, pueden hacerlo a través de:
         </p>
@@ -67,17 +67,17 @@ export default function MesaDeRegalos() {
           )}
         >
           <img
-            src="el-palacio-de-hierro.svg"
+            src="https://placehold.co/600x600/transparent/F00"
             alt="image 1"
             className="h-full w-96 object-cover"
           />
           <img
-            src="liverpool-es-parte-de-mi-vida-logo-png_seeklogo-259639.png"
+                 src="https://placehold.co/600x600/transparent/F00"
             alt="image 2"
             className="h-full w-96 object-cover"
           />
           <img
-            src="01cada77a0a7d326d85b7969fe26a728.jpg"
+                 src="https://placehold.co/600x600/transparent/F00"
             alt="image 3"
             className="h-full w-96 object-cover"
           />

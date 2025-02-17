@@ -18,11 +18,13 @@ export default function HomePage() {
   useEffect(() => {
     setTimeout(() => {
       setCarga("invisible");
+
     }, 1000);
   }, []);
 
   return (
     <>
+
       <div
         className={` ${carga} animate-fade animate-ease-out  z-50 fixed bg-[#859381] h-screen w-screen grid place-content-center invisible`}
       >
