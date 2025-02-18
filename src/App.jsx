@@ -7,10 +7,9 @@ export default function App() {
   return (
     <>
       <Routes>
-        {/* Parent route with "*" to match deeper paths */}
-        <Route path="/" element={<HomePage />} />
-
-        {/* Other routes (if needed) */}
+        <Route path="/" element={<HomePage />}>
+        
+        </Route>
         <Route path="/asistencia" element={<RSVList/>} />
       </Routes>
     </>

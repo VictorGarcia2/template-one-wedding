@@ -37,25 +37,19 @@ export default function HomePage() {
 
       {/* Contenido principal */}
       <div className="overflow-x-hidden">
-        {/* Nested routes */}
-        <Routes>
-          <Route path="/Menu" element={<Menu />} />
-          <Route path="/Contador" element={<Contador />} />
-          <Route path="/Padres" element={<Padres />} />
-          <Route path="/Dedicatoria" element={<Dedicatoria />} />
-          <Route path="/Itinerario" element={<Itinerario />} />
-          <Route path="/Dresscode" element={<Dresscode />} />
-          <Route path="/MesaDeRegalos" element={<MesaDeRegalos />} />
-          <Route path="/Noninos" element={<Noninos />} />
-          <Route path="/Hospedaje" element={<Hospedaje />} />
-          <Route path="/Galeria" element={<Galeria />} />
-          <Route path="/Amenidades" element={<Amenidades />} />
-          <Route path="/Asistencia" element={<Asistencia />} />
-          <Route path="/Footer" element={<Footer />} />
-        </Routes>
-
-        {/* Render nested routes here */}
-        <Outlet />
+        <Menu></Menu>
+        <Contador></Contador>
+        <Padres></Padres>
+        <Dedicatoria></Dedicatoria>
+        <Itinerario></Itinerario>
+        <Dresscode></Dresscode>
+        <MesaDeRegalos></MesaDeRegalos>
+        <Noninos></Noninos>
+        <Hospedaje></Hospedaje>
+        <Galeria></Galeria>
+        <Amenidades></Amenidades>
+        <Asistencia></Asistencia>
+        <Footer></Footer>
       </div>
     </>
   );
