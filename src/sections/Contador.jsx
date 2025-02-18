@@ -14,22 +14,22 @@ export default function Contador() {
   }, []);
 
   return (
-    <div className="animate-fade-left animate-once animate-duration-1000 animate-delay-1000 animate-ease-in w-full">
-      <div className="flex flex-col items-center  ">
-        <h1 data-aos="fade-left" className=" text-white mt-40 text-7xl absolute font-display font-bold ">
+    <div className="animate-fade-left relative animate-once animate-duration-1000 animate-delay-1000 animate-ease-in bg-black/90   w-full">
+      <div className="flex flex-col items-center ">
+        <h1  className=" text-white mt-40 text-7xl absolute font-display font-bold z-20  ">
           Alex & <br /> Agata
         </h1>
-        <div className="absolute  mt-[500px]  w-full ">
-          <p className="w-full font-display text-center text-xl tracking-widest text-white">
+        <div className="absolute  mt-[500px] z-20  w-full ">
+          <p className="w-full font-display text-center text-xl tracking-widest text-white ">
             21 DE OCTUBRE 2025
           </p>
           <hr className=" mx-auto text-white w-80 static" />
-          <CountdownTimer targetDate={targetDate} />
+          <CountdownTimer targetDate={targetDate}  />
           <hr className="mx-auto text-white w-80 static" />
         </div>
         <img
-          className=" object-cover   h-screen"
-          src="pexels-emma-bauso-1183828-2253870.jpg"
+          className="object-cover h-screen opacity-75"
+          src="/public/gallery/foto-20.jpg"
           alt=""
         />
       </div>
