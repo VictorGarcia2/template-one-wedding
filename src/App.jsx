@@ -1,15 +1,17 @@
 import React from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import { Route, Routes } from "react-router";
-import HomePage from "./sections/pages/HomePage";
-import RSVPList from "./sections/pages/RSVPList ";
+import HomePage from "./pages/HomePage";
+import RSVList from "./pages/RSVPList "
+
 export default function App() {
   return (
     <>
       <Routes>
+        {/* Parent route with "*" to match deeper paths */}
         <Route path="/" element={<HomePage />} />
-        <Route path="/asistencia" element={<RSVPList />} />
+
+        {/* Other routes (if needed) */}
+        <Route path="/asistencia" element={<RSVList/>} />
       </Routes>
     </>
   );

@@ -34,21 +34,39 @@ export default function Itinerario() {
   ];
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], [0, -600]); // Ajusta los valores para el efecto parallax
- 
+
   return (
     <>
-      <div className="w-full mx-auto flex flex-col text-center  h-full"  >
+      <div className="w-full mx-auto flex flex-col text-center relative -z-10  h-full">
+        <div
+          className="fixed bottom-0 left-0 w-full h-60 backdrop-blur-sm  bg-[#859382]/10"
+          style={{
+            WebkitMaskImage:
+              "linear-gradient(to bottom, transparent, white 60%, white 100%, transparent)",
+            maskImage:
+              "linear-gradient(to bottom, transparent, white 60%, white 100%, transparent)",
+          }}
+        ></div>
         <img
           className="absolute  object-cover opacity-55 h-[1600px] -z-10"
           src="bg.jpg"
           alt=""
         />
-        <p className="font-display items-center text-5xl pt-7 " data-aos="fade-right">Itinerario</p>
+        <p
+          className="font-display items-center text-5xl pt-7 "
+          data-aos="fade-right"
+        >
+          Itinerario
+        </p>
         <ol class=" mx-20 border-s border-gray-700 pt-96 -z-10 ">
           {list &&
             list?.map((lista) => (
               <motion.div style={{ y }}>
-                <li class={ ` ${lista.id === 4 ? "pb-0":"pb-50"} mx-10 flex flex-col w-full justify-center -mt-40 mb-20` }>
+                <li
+                  class={` ${
+                    lista.id === 4 ? "pb-0" : "pb-50"
+                  } mx-10 flex flex-col w-full justify-center -mt-40 mb-20`}
+                >
                   <span class="  w-10 h-10 mb-5   -ms-26  text-center   absolute">
                     <p className="font-display text-center">4pm</p>
                   </span>

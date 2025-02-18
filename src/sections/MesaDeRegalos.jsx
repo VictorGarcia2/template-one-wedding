@@ -16,20 +16,20 @@ export default function MesaDeRegalos() {
           embargo, si desean obsequiarnos algo más, pueden hacerlo a través de:
         </p>
         <Carousel
-          className="rounded-xl mb-5"
+          className="rounded-xl mb-5 "
           prevArrow={({ handlePrev }) => (
             <IconButton
               variant="text"
               color="black"
               size="lg"
               onClick={handlePrev}
-              className="!absolute top-2/4 left-4 -translate-y-2/4"
+              className="!absolute top-2/4 left-4 -translate-y-2/4 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={2}
+                strokeWidth={5}
                 stroke="black"
                 className="h-6 w-6"
               >
@@ -47,13 +47,89 @@ export default function MesaDeRegalos() {
               color="black"
               size="lg"
               onClick={handleNext}
-              className="!absolute top-2/4 !right-4 -translate-y-2/4"
+              className="!absolute top-2/4 !right-4 -translate-y-2/4 "
+              
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={2}
+                strokeWidth={5}
+                stroke="black"
+                className="h-6 w-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </IconButton>
+          )}
+        >
+          <a href="https://www.liverpool.com.mx/tienda/home">
+
+          <img
+            src="liverpool-es-parte-de-mi-vida-seeklogo-01.webp"
+            alt="image 1"
+            className="h-full w-96 object-cover "
+            />
+            </a>
+          <a href="https://www.elpalaciodehierro.com/">
+          <img
+                 src="liverpool-es-parte-de-mi-vida-seeklogo-02.webp"
+                 alt="image 2"
+                 className="h-full w-96 object-cover "
+                 />
+                 </a>
+        
+        </Carousel>
+      </div>
+    </div>
+  );
+}
+
+
+<Carousel
+          className="rounded-xl mb-5 "
+          prevArrow={({ handlePrev }) => (
+            <IconButton
+              variant="text"
+              color="black"
+              size="lg"
+              onClick={handlePrev}
+              className="!absolute top-2/4 left-4 -translate-y-2/4 "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={5}
+                stroke="white"
+                className="h-6 w-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                />
+              </svg>
+            </IconButton>
+          )}
+          nextArrow={({ handleNext }) => (
+            <IconButton
+              variant="text"
+              color="black"
+              size="lg"
+              onClick={handleNext}
+              className="!absolute top-2/4 !right-4 -translate-y-2/4 "
+              
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={5}
                 stroke="black"
                 className="h-6 w-6"
               >
@@ -67,22 +143,14 @@ export default function MesaDeRegalos() {
           )}
         >
           <img
-            src="https://placehold.co/600x600/transparent/F00"
+            src="liverpool-es-parte-de-mi-vida-seeklogo-01.webp"
             alt="image 1"
-            className="h-full w-96 object-cover"
+            className="h-full w-96 object-cover "
           />
           <img
-                 src="https://placehold.co/600x600/transparent/F00"
+                 src="liverpool-es-parte-de-mi-vida-seeklogo-02.webp"
             alt="image 2"
-            className="h-full w-96 object-cover"
+            className="h-full w-96 object-cover "
           />
-          <img
-                 src="https://placehold.co/600x600/transparent/F00"
-            alt="image 3"
-            className="h-full w-96 object-cover"
-          />
+        
         </Carousel>
-      </div>
-    </div>
-  );
-}

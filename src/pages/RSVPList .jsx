@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { db, onValue, ref } from "../../firebase/firebase";
+import { db, onValue, ref } from "../firebase/firebase";
+import { Outlet } from "react-router";
 
 const RSVPList = () => {
   const [attendees, setAttendees] = useState([]);
@@ -57,7 +58,9 @@ const RSVPList = () => {
           ))}
         </tbody>
       </table>
+      <Outlet />
     </div>
+    
   );
 };
 
