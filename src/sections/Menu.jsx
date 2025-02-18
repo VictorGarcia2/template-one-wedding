@@ -16,7 +16,7 @@ export default function Menu() {
           className={`${
             open ? "hidden" : "block"
           } bg-[#859381] rounded p-1 w-10 cursor-pointer`}
-          src="/public/icons/menu.svg"
+          src="icons/menu.svg"
           alt="Menu"
         />
       </div>

@@ -12,7 +12,6 @@ export default function Contador() {
     }
     );
   }, []);
-
   return (
     <div className="animate-fade-left relative animate-once animate-duration-1000 animate-delay-1000 animate-ease-in bg-black/90   w-full">
       <div className="flex flex-col items-center ">
@@ -29,7 +28,7 @@ export default function Contador() {
         </div>
         <img
           className="object-cover h-screen opacity-75"
-          src="/public/gallery/foto-20.jpg"
+          src="gallery/foto-20.jpg"
           alt=""
         />
       </div>
