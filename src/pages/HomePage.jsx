@@ -13,7 +13,6 @@ import Amenidades from "../sections/Amenidades";
 import Asistencia from "../sections/Asistencia";
 import Footer from "../sections/Footer";
 import Menu from "../sections/Menu";
-import { Route, Routes } from "react-router";
 
 export default function HomePage() {
   const [carga, setCarga] = useState("opacity-100");
@@ -34,21 +33,42 @@ export default function HomePage() {
           Alex & <br /> Agata
         </h1>
       </div>
-
       {/* Contenido principal */}
       <div className="overflow-x-hidden">
         <Menu></Menu>
-        <Contador></Contador>
-        <Padres></Padres>
-        <Dedicatoria></Dedicatoria>
-        <Itinerario></Itinerario>
-        <Dresscode></Dresscode>
-        <MesaDeRegalos></MesaDeRegalos>
-        <Noninos></Noninos>
-        <Hospedaje></Hospedaje>
-        <Galeria></Galeria>
-        <Amenidades></Amenidades>
-        <Asistencia></Asistencia>
+        <section id="contador">
+          <Contador></Contador>
+        </section>
+        <section id="padres">
+          <Padres></Padres>
+        </section>
+        <section id="dedicatoria">
+          <Dedicatoria></Dedicatoria>
+        </section>
+        <section id="itinerario">
+          <Itinerario></Itinerario>
+        </section>
+        <section id="dresscode">
+          <Dresscode></Dresscode>
+        </section>
+        <section id="mesaDeRegalos">
+          <MesaDeRegalos></MesaDeRegalos>
+        </section>
+        <section id="noninos">
+          <Noninos></Noninos>
+        </section>
+        <section id="hospedaje">
+          <Hospedaje></Hospedaje>
+        </section>
+        <section id="galeria">
+          <Galeria></Galeria>
+        </section>
+        <section id="amenidades">
+          <Amenidades></Amenidades>
+        </section>
+        <section id="asistencia">
+          <Asistencia></Asistencia>
+        </section>
         <Footer></Footer>
       </div>
     </>

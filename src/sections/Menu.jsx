@@ -10,10 +10,12 @@ export default function Menu() {
   return (
     <>
       {/* Botón de menú */}
-      <div className="p-5 absolute right-0">
+      <div className="p-2 fixed right-0  z-50">
         <img
           onClick={() => thisMenu(true)}
-          className={`${open ? "hidden" : "block"} cursor-pointer`}
+          className={`${
+            open ? "hidden" : "block"
+          } bg-[#859381] rounded p-1 w-10 cursor-pointer`}
           src="/public/icons/menu.svg"
           alt="Menu"
         />
@@ -22,7 +24,11 @@ export default function Menu() {
       {/* Menú lateral */}
       <div
         className={`fixed right-0 bg-white w-56 h-screen z-50 transition-all duration-[1300ms] ease-in-out 
-          ${open ? " translate-x-0 pointer-events-auto" : " translate-x-full pointer-events-none"}`}
+          ${
+            open
+              ? " translate-x-0 pointer-events-auto"
+              : " translate-x-full pointer-events-none"
+          }`}
       >
         <div className="p-2 font-display flex flex-col">
           <p
@@ -31,27 +37,48 @@ export default function Menu() {
           >
             X
           </p>
-          <Link to="/contador" className="text-end mt-5 font-bold text-2xl text-[#859381]">
+          <a
+            onClick={() => thisMenu(false)}
+            href="#contador"
+            className="text-end mt-5 font-bold text-2xl text-[#859381]"
+          >
             Contador
-          </Link>
-          <Link to="/Padres" className="text-end mt-5 font-bold text-2xl text-[#859381]">
+          </a>
+          <a
+            onClick={() => thisMenu(false)}
+            href="#padres"
+            className="text-end mt-5 font-bold text-2xl text-[#859381]"
+          >
             Padres
-          </Link>
-          <Link to="/Itinerario" className="text-end mt-5 font-bold text-2xl text-[#859381]">
+          </a>
+          <a
+            onClick={() => thisMenu(false)}
+            href="#itinerario"
+            className="text-end mt-5 font-bold text-2xl text-[#859381]"
+          >
             Itinerario
-          </Link>
-          <Link to="/MesadeRegalos" className="text-end mt-5 font-bold text-2xl text-[#859381]">
+          </a>
+          <a
+            onClick={() => thisMenu(false)}
+            href="#mesaDeRegalos"
+            className="text-end mt-5 font-bold text-2xl text-[#859381]"
+          >
             Mesa de Regalos
-          </Link>
-          <Link to="/Hospedaje" className="text-end mt-5 font-bold text-2xl text-[#859381]">
+          </a>
+          <a
+            onClick={() => thisMenu(false)}
+            href="#hospedaje"
+            className="text-end mt-5 font-bold text-2xl text-[#859381]"
+          >
             Hospedaje
-          </Link>
-          <Link to="/Hospedaje" className="text-end mt-5 font-bold text-2xl text-[#859381]">
-            Hospedaje
-          </Link>
-          <Link to="/Asistencia" className="text-end mt-5 font-bold text-2xl text-[#859381]">
+          </a>
+          <a
+            onClick={() => thisMenu(false)}
+            href="#asistencia"
+            className="text-end mt-5 font-bold text-2xl text-[#859381]"
+          >
             Asistencia
-          </Link>
+          </a>
         </div>
       </div>
     </>
