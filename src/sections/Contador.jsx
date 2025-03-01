@@ -13,7 +13,7 @@ export default function Contador() {
     );
   }, []);
   return (
-    <div className="animate-fade-left relative animate-once animate-duration-1000 animate-delay-1000 animate-ease-in bg-black/90   w-full">
+    <div className="sm:h-[900px] animate-fade-left relative animate-once animate-duration-1000 animate-delay-1000 animate-ease-in bg-black/90   w-full">
       <div className="flex flex-col items-center ">
         <h1  className=" text-white mt-40 text-7xl absolute font-display font-bold z-20  ">
           Alex & <br /> Agata
@@ -27,7 +27,7 @@ export default function Contador() {
           <hr className="mx-auto text-white w-80 static" />
         </div>
         <img
-          className="object-cover h-screen opacity-75"
+          className="object-cover h-screen sm:h-[900px] sm:w-full opacity-75"
           src="gallery/foto-20.jpg"
           alt=""
         />

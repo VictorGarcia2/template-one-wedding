@@ -6,7 +6,7 @@ export default function Galeria() {
         <div className="bg-[#859382] text-center px-10 py-2 rounded text-white pb-9 ">
           <p className="font-display text-3xl py-6 text-white" data-aos="zoom-in">Galería</p>
           <hr className="w-72 mx-auto" />
-          <div className="grid grid-cols-2 md:grid-cols-4 mt-4 gap-4 h-96 overflow-y-scroll overflow-hidden">
+          <div className="grid grid-cols-2 md:grid-cols-3 mt-4 gap-4 h-96 sm:h-screen overflow-y-scroll overflow-hidden">
             <div className="grid gap-4">
               <div>
                 <img className="h-auto max-w-full rounded-lg" src="gallery/foto-11.jpg" alt=""></img>

@@ -58,7 +58,7 @@ export default function Itinerario() {
         >
           Itinerario
         </p>
-        <ol class=" mx-20 border-s border-gray-700 pt-96 -z-10 ">
+        <ol class=" mx-20 sm:mx-auto sm:w-60 border-s border-gray-700 pt-96 -z-10 ">
           {list &&
             list?.map((lista) => (
               <motion.div style={{ y }}>
