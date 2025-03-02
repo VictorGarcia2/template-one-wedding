@@ -17,40 +17,31 @@ export default function Galeria() {
               <div>
                 <img className="h-auto max-w-full rounded-lg" src="gallery/foto-14.jpg" alt=""></img>
               </div>
-            </div>
-            <div className="grid gap-4">
-              <div>
-                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-18.jpg" alt=""></img>
-              </div>
               <div>
                 <img className="h-auto max-w-full rounded-lg" src="gallery/foto-15.jpg" alt=""></img>
-              </div>
-              <div>
-                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-18.jpg" alt=""></img>
-              </div>
-            </div>
-            <div className="grid gap-4">
-              <div>
-                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-13.jpg" alt=""></img>
-              </div>
-              <div>
-                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-14.jpg" alt=""></img>
-              </div>
-              <div>
-                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-18.jpg" alt=""></img>
-              </div>
-            </div>
-            <div className="grid gap-4">
-              <div>
-                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-18.jpg" alt=""></img>
-              </div>
-              <div>
-                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-14.jpg" alt=""></img>
               </div>
               <div>
                 <img className="h-auto max-w-full rounded-lg" src="gallery/foto-16.jpg" alt=""></img>
               </div>
             </div>
+            <div className="grid gap-4">
+              <div>
+                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-17.jpg" alt=""></img>
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-18.jpg" alt=""></img>
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-19.jpg" alt=""></img>
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-20.jpg" alt=""></img>
+              </div>
+              <div>
+                <img className="h-auto max-w-full rounded-lg" src="gallery/foto-21.jpg" alt=""></img>
+              </div>
+            </div>
+            
           </div>
 
           <hr className="w-73 text-white mx-auto my-9 " />
