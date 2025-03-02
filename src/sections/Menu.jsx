@@ -27,8 +27,7 @@ export default function Menu() {
           ${
             open
               ? " translate-x-0 pointer-events-auto"
-              : " translate-x-full pointer-events-none"
-          }`}
+              : " translate-x-full pointer-events-none"}`}
       >
         <div className="p-2 font-display flex flex-col">
           <p

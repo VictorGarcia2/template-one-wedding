@@ -3,7 +3,7 @@ import React from "react";
 export default function Padres() {
   return (
     <div className="bg-slate-100 flex flex-col justify-center text-white align-middle items-center">
-    <div className="w-80 bg-[#859382] mt-10 mb-10">
+    <div className="w-80 bg-[#859382] mt-10 mb-10 rounded-3xl">
       {/* Título principal */}
       <p
         className="font-display font-300 text-3xl text-center pt-10"
