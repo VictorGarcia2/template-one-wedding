@@ -13,6 +13,7 @@ import Amenidades from "../sections/Amenidades";
 import Asistencia from "../sections/Asistencia";
 import Footer from "../sections/Footer";
 import Menu from "../sections/Menu";
+import ReproductorMusica from "../components/ReproductorMusica";
 
 export default function HomePage() {
   const [carga, setCarga] = useState("opacity-100");
@@ -35,6 +36,7 @@ export default function HomePage() {
       </div>
       {/* Contenido principal */}
       <div className="overflow-x-hidden">
+        <ReproductorMusica/>
         <Menu></Menu>
         <section id="contador">
           <Contador></Contador>
