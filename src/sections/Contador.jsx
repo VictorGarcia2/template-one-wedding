@@ -13,7 +13,7 @@ export default function Contador() {
     );
   }, []);
   return (
-    <div className="sm:h-[900px] animate-fade-left relative animate-once animate-duration-1000 animate-delay-1000 animate-ease-in bg-black/90   w-full">
+    <div className="sm:h-[900px]  bg-black/90   w-full">
       <div className="flex flex-col items-center ">
         <h1  className=" text-white mt-40 text-7xl absolute font-display font-bold z-20  ">
           Alex & <br /> Agata
