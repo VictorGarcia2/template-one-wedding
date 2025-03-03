@@ -39,7 +39,7 @@ export default function Itinerario() {
     <>
       <div className="w-full mx-auto flex flex-col text-center relative -z-10  h-full">
         <div
-          className="fixed bottom-0 left-0 w-full h-60 backdrop-blur-sm  bg-[#859382]/10"
+          className="fixed bottom-0 left-0 w-full h-60 backdrop-blur-sm  bg-[#AEA38E]/10"
           style={{
             WebkitMaskImage:
               "linear-gradient(to bottom, transparent, white 60%, white 100%, transparent)",
@@ -70,7 +70,7 @@ export default function Itinerario() {
                   <span class="  w-10 h-10 mb-5   -ms-26  text-center   absolute">
                     <p className="font-display text-center">4pm</p>
                   </span>
-                  <span class=" flex mx-auto justify-center w-14 mb-5  rounded-full start-10 ring-3 bg-white  ring-green-950">
+                  <span class=" flex mx-auto justify-center w-14 mb-5  rounded start-10 ring-3 bg-white  ring-green-950">
                     <img className="p-2" src={lista.img} alt="" />
                   </span>
                   <h3 class="flex items-center mb-1 text-4xl mx-auto font-display font-300 ">
@@ -81,7 +81,7 @@ export default function Itinerario() {
                   </p>
                   <div className="mx-auto ">
                     <a
-                      className="bg-[#859382] text-center px-4 py-2 rounded text-white "
+                      className="bg-[#AEA38E] text-center px-4 py-2 rounded text-white "
                       href=""
                     >
                       Ver mapa

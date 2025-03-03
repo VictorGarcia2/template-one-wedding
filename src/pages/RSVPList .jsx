@@ -31,7 +31,7 @@ const RSVPList = () => {
     return total;
   }, 0);
   return (
-    <div className="flex flex-col justify-center  px-10 bg-[#859382] text-white ">
+    <div className="flex flex-col justify-center  px-10 bg-[#AEA38E] text-white ">
       <div className="h-screen  grid place-content-center">
 
       <p className="py-2 text-9xl  text-center font-display italic">{totalGuests}</p>

@@ -3,7 +3,7 @@ import React from "react";
 export default function Padres() {
   return (
     <div className="bg-slate-100 flex flex-col z-50 justify-center text-white align-middle items-center">
-      <div className="w-80 bg-[#859382] mt-10 mb-10 rounded-3xl">
+      <div className="w-80 bg-[#AEA38E] mt-10 mb-10 rounded-3xl">
         <p
           className="font-display font-300 text-3xl text-center pt-10"
           data-aos="fade-down" // Animación de fade hacia abajo

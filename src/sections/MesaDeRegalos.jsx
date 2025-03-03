@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MesaDeRegalos() {
   return (
-    <div className="bg-[#859382] text-white mx-auto ">
+    <div className="bg-[#AEA38E] text-white mx-auto ">
       <img
         className="w-full sm:h-[500px] object-cover"
         src="gallery/foto-9.jpg"

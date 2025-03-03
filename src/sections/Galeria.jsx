@@ -16,7 +16,7 @@ const images = [
 
 export default function Galeria() {
   return (
-    <div className="bg-[#859382] text-center px-10 py-2 rounded text-white pb-9">
+    <div className="bg-[#AEA38E] text-center px-10 py-2 rounded text-white pb-9">
       <p className="font-display text-3xl py-6 text-white" data-aos="zoom-in">
         Galería
       </p>
@@ -43,7 +43,7 @@ export default function Galeria() {
         mejores momentos de nuestra boda:
       </p>
       <a
-        className="bg-white mt-3.5 inline-block text-center px-4 py-2 rounded text-[#859382]"
+        className="bg-white mt-3.5 inline-block text-center px-4 py-2 rounded text-[#AEA38E]"
         href="#"
       >
         CARGAR FOTOS Y VIDEOS

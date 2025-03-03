@@ -92,7 +92,7 @@ export default function () {
             </select>
           </label>
           <button
-            className="my-5 bg-[#859382] mt-3.5 inline-block text-center px-4 py-2 rounded text-white "
+            className="my-5 bg-[#AEA38E] mt-3.5 inline-block text-center px-4 py-2 rounded text-white "
             type="submit"
           >
             CONFIRMAR
