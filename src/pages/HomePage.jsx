@@ -65,9 +65,9 @@ export default function HomePage() {
         <section id="galeria">
           <Galeria></Galeria>
         </section>
-        <section id="amenidades">
+        {/* <section id="amenidades">
           <Amenidades></Amenidades>
-        </section>
+        </section> */}
         <section id="asistencia">
           <Asistencia></Asistencia>
         </section>
