@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const CountdownTimer = ({ targetDate }) => {
   const calculateTimeLeft = () => {
@@ -33,27 +33,25 @@ const CountdownTimer = ({ targetDate }) => {
   }
 
   return (
-    <div  className='flex font-display  z-50 justify-center  mx-auto w-full text-white gap-8 text-center text-base'>
-      <div className='flex flex-col'>
-        <span className='text-3xl' >{timeLeft.days}</span>
-        <span className='text-sm'>Días</span>
+    <div className="flex font-display  z-50 justify-center   mx-auto w-full text-white gap-8 text-center text-base">
+      <div className="flex flex-col">
+        <span className="text-3xl">{timeLeft.days}</span>
+        <span className="text-sm">Días</span>
       </div>
-      <div className='flex flex-col'>
-        <span className='text-3xl' >{timeLeft.hours}</span>
-        <span className='text-sm'>Hrs</span>
+      <div className="flex flex-col">
+        <span className="text-3xl">{timeLeft.hours}</span>
+        <span className="text-sm">Hrs</span>
       </div>
-      <div className='flex flex-col'>
-        <span className='text-3xl' >{timeLeft.minutes}</span>
-        <span className='text-sm'>Min</span>
+      <div className="flex flex-col">
+        <span className="text-3xl">{timeLeft.minutes}</span>
+        <span className="text-sm">Min</span>
       </div>
-      <div  className='flex flex-col'>
-        <span className='text-3xl' >{timeLeft.seconds}</span>
-        <span className='text-sm'>Seg</span>
+      <div className="flex flex-col">
+        <span className="text-3xl">{timeLeft.seconds}</span>
+        <span className="text-sm">Seg</span>
       </div>
     </div>
   );
 };
-
-
 
 export default CountdownTimer;

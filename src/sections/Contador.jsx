@@ -13,12 +13,12 @@ export default function Contador() {
     );
   }, []);
   return (
-    <div className="sm:h-[900px]  bg-black/90   w-full">
+    <div className="sm:h-[900px]  bg-black/90 z-20   w-full">
       <div className="flex flex-col items-center ">
         <h1  className=" text-white mt-40 text-7xl absolute font-display font-bold z-20  ">
-          Alex & <br /> Agata
+          Alex & <br /> Caro
         </h1>
-        <div className="absolute  mt-[500px] z-20  w-full ">
+        <div className="absolute  bg-black/20 rounded p-4 flex flex-col justify-center  mt-[500px] z-20  ">
           <p className="w-full font-display text-center text-xl tracking-widest text-white ">
             21 DE OCTUBRE 2025
           </p>

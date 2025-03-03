@@ -31,7 +31,7 @@ export default function HomePage() {
         className={`fixed z-50 bg-[#859381] h-screen w-screen grid place-content-center transition-opacity duration-1000 ${carga}`}
       >
         <h1 className=" font-display text-white -mt-24 text-6xl text-center">
-          Alex & <br /> Agata
+          Alex & <br /> Caro
         </h1>
       </div>
       {/* Contenido principal */}
