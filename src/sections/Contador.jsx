@@ -27,8 +27,13 @@ export default function Contador() {
           <hr className="mx-auto text-white w-80 static" />
         </div>
         <img
-          className="object-cover h-screen sm:h-[900px] sm:w-full opacity-75"
-          src="gallery/foto-20.jpg"
+          className="visible sm:invisible object-cover h-screen sm:h-[900px] sm:w-full opacity-75"
+          src="gallery/foto-3.jpg"
+          alt=""
+        />
+        <img
+          className="invisible absolute sm:visible object-cover h-screen sm:h-[900px] sm:w-full opacity-75"
+          src="gallery/foto.jpg"
           alt=""
         />
       </div>

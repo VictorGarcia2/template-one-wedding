@@ -6,7 +6,7 @@ export default function MesaDeRegalos() {
     <div className="bg-[#859382] text-white mx-auto ">
       <img
         className="w-full sm:h-[500px] object-cover"
-        src="pexels-emma-bauso-1183828-2253870.jpg"
+        src="gallery/foto-9.jpg"
         alt=""
       />
       <div className="flex flex-col justify-center items-center px-10 sm:w-[400px] mx-auto ">

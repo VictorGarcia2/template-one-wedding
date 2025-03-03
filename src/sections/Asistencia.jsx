@@ -36,7 +36,7 @@ export default function () {
     <div className="items-center flex flex-col justify-center text-center ">
       <img 
       className="sm:h-[500px] object-cover w-full"
-      src="pexels-emma-bauso-1183828-2253870.jpg" alt="" />
+      src="gallery/foto-2.jpg" alt="" />
       <div className="px-10 pt-10">
         <p className="font-display text-3xl">CONFIRMA TU ASISTENCIA</p>
         <p className="font-display py-5">

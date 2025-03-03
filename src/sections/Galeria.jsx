@@ -2,16 +2,16 @@ import React from "react";
 
 // Datos de las imágenes (podrías mover esto a un archivo JSON o importarlo desde una API)
 const images = [
-  { src: "gallery/foto-11.jpg", alt: "Foto 11" },
-  { src: "gallery/foto-13.jpg", alt: "Foto 13" },
-  { src: "gallery/foto-14.jpg", alt: "Foto 14" },
-  { src: "gallery/foto-15.jpg", alt: "Foto 15" },
-  { src: "gallery/foto-16.jpg", alt: "Foto 16" },
-  { src: "gallery/foto-17.jpg", alt: "Foto 17" },
-  { src: "gallery/foto-18.jpg", alt: "Foto 18" },
-  { src: "gallery/foto-19.jpg", alt: "Foto 19" },
-  { src: "gallery/foto-20.jpg", alt: "Foto 20" },
-  { src: "gallery/foto-21.jpg", alt: "Foto 21" },
+  { src: "gallery/foto-4.jpg", alt: "Foto 14" },
+  { src: "gallery/foto-5.jpg", alt: "Foto 16" },
+  { src: "gallery/foto-7.jpg", alt: "Foto 17" },
+  { src: "gallery/foto-3.jpg", alt: "Foto 15" },
+  { src: "gallery/foto-2.jpg", alt: "Foto 13" },
+  { src: "gallery/foto.jpg", alt: "Foto 11" },
+  { src: "gallery/foto-8.jpg", alt: "Foto 18" },
+  { src: "gallery/foto-9.jpg", alt: "Foto 19" },
+  { src: "gallery/foto-10.jpg", alt: "Foto 20" },
+  { src: "gallery/foto-6.jpg", alt: "Foto 21" },
 ];
 
 export default function Galeria() {
@@ -21,11 +21,11 @@ export default function Galeria() {
         Galería
       </p>
       <hr className="w-72 mx-auto" />
-      <div className="grid grid-cols-2 md:grid-cols-3 mt-4 gap-4 h-96 sm:h-screen overflow-y-auto">
+      <div className="grid grid-cols-2 md:grid-cols-5 mt-4 gap-4 h-96 sm:h-screen overflow-y-auto">
         {images.map((image, index) => (
           <div key={index} className="grid gap-4">
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="w-full h-auto object-cover rounded-2xl"
               src={image.src}
               alt={image.alt}
               loading="lazy" 
