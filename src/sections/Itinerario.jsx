@@ -9,6 +9,7 @@ export default function Itinerario() {
       tittle: "CEREMONIA",
       body: "Capilla Hacienda Tekik de Regil",
       mapa: "",
+      horario: "4pm"
     },
     {
       id: 2,
@@ -16,6 +17,7 @@ export default function Itinerario() {
       tittle: "RECEPCIÓN",
       body: "Jardines Hacienda Tekik de Regil",
       mapa: "",
+      horario: "6pm"
     },
     {
       id: 3,
@@ -23,6 +25,7 @@ export default function Itinerario() {
       tittle: "CÓCTEL",
       body: "Terraza Hacienda Tekik de Regil",
       mapa: "",
+      horario: "7pm"
     },
     {
       id: 4,
@@ -30,6 +33,7 @@ export default function Itinerario() {
       tittle: "CENA",
       body: "Salón Hacienda Tekik de Regil",
       mapa: "",
+      horario: "8pm"
     },
   ];
   const { scrollYProgress } = useScroll();
@@ -58,7 +62,7 @@ export default function Itinerario() {
         >
           Itinerario
         </p>
-        <ol class=" mx-20 sm:mx-auto sm:w-60 border-s border-gray-700 pt-96 -z-10 ">
+        <ol class=" mx-20 sm:mx-auto sm:w-60  border-s md:border-none md:justify-center md:flex border-gray-700 pt-96 -z-10 ">
           {list &&
             list?.map((lista) => (
               <motion.div style={{ y }}>
@@ -67,10 +71,10 @@ export default function Itinerario() {
                     lista.id === 4 ? "pb-0" : "pb-50"
                   } mx-10 flex flex-col w-full justify-center -mt-40 mb-20`}
                 >
-                  <span class="  w-10 h-10 mb-5   -ms-26  text-center   absolute">
-                    <p className="font-display text-center">4pm</p>
+                  <span class="  w-10 h-10 mb-5 md:mt-80  md:flex md:justify-center md:ms-34 md:items-center  -ms-26  text-center   absolute">
+                    <p className="font-display text-center">{lista.horario}</p>
                   </span>
-                  <span class=" flex mx-auto justify-center w-14 mb-5  rounded start-10 ring-3 bg-white  ring-green-950">
+                  <span class=" flex mx-auto justify-center w-14 mb-5  rounded start-10 ring-3 bg-white  ring-[#AEA38E]">
                     <img className="p-2" src={lista.img} alt="" />
                   </span>
                   <h3 class="flex items-center mb-1 text-4xl mx-auto font-display font-300 ">

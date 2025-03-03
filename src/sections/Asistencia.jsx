@@ -40,7 +40,7 @@ export default function () {
       <div className="px-10 pt-10">
         <p className="font-display text-3xl">CONFIRMA TU ASISTENCIA</p>
         <p className="font-display py-5">
-          Nos ayudas confirmando tu asistencia lo antes posible, muchas gracias.
+        Por favor, confirma tu asistencia lo antes posible. ¡Tu pronta respuesta nos ayuda a preparar todo para que disfrutes al máximo! Muchas gracias.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col">
           <p className="font-display text-start">¿Asisitirás?</p>
@@ -75,8 +75,7 @@ export default function () {
             placeholder="Tu nombre completo"
           />
           <label className="text-start font-display" htmlFor="">
-            Número de personas confirmadas de acuerdo al número asignado en tu
-            Pase:
+          Confirma el número de personas según lo indicado en tu Pase. Asegúrate de que todo esté listo para vivir una experiencia inolvidable
             <select
               className="border mt-5 border-gray-300 w-full p-3"
               value={guests} // Usa el estado actual

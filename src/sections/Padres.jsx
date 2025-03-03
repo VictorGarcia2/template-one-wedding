@@ -40,7 +40,7 @@ export default function Padres() {
             className="font-display"
             data-aos="fade-up" // Animación de fade hacia arriba
           >
-            Olga García De García <br /> Edgar Alberto García Coronado
+            Aranza Ponce <br /> Fernando Garrido
           </p>
         </div>
       </div>

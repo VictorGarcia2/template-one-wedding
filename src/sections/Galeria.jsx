@@ -1,4 +1,5 @@
 import React from "react";
+import GaleriaSlider from "../components/GaleriaSlider";
 
 // Datos de las imágenes (podrías mover esto a un archivo JSON o importarlo desde una API)
 const images = [
@@ -21,7 +22,7 @@ export default function Galeria() {
         Galería
       </p>
       <hr className="w-72 mx-auto" />
-      <div className="grid grid-cols-2 md:grid-cols-5 mt-4 gap-4 h-96 sm:h-screen overflow-y-auto">
+      <div className="hidden md:grid md:visible grid-cols-2 md:grid-cols-5 mt-4 gap-4 h-96 sm:h-screen overflow-y-auto">
         {images.map((image, index) => (
           <div key={index} className="grid gap-4">
             <img
@@ -33,14 +34,16 @@ export default function Galeria() {
           </div>
         ))}
       </div>
+      <div className="visible  md:hidden  mt-4 gap-4 h-96 sm:h-screen ">
+        <GaleriaSlider/>
+      </div>
 
       <hr className="w-73 text-white mx-auto my-9" />
       <p className="font-display text-3xl text-white" data-aos="fade-right">
-        SHARE YOUR MOMENTS
+        COMPARTE TUS MOMENTOS
       </p>
       <p className="font-display text-base text-white" data-aos="fade-left">
-        Te compartimos este espacio en donde podrás subir fotos y videos de los
-        mejores momentos de nuestra boda:
+      Queremos que formes parte de nuestros recuerdos más especiales. Sube tus fotos y videos de los mejores momentos de nuestra boda en este espacio. ¡Gracias por ser parte de nuestra historia!
       </p>
       <a
         className="bg-white mt-3.5 inline-block text-center px-4 py-2 rounded text-[#AEA38E]"

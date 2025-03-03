@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import Contador from "../sections/Contador";
 import Padres from "../sections/Padres";
 import Dedicatoria from "../sections/Dedicatoria";
