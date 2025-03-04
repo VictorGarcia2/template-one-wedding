@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CountdownTimer from "../components/CountdownTimer";
 import Aos from "aos";
-
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 export default function Contador() {
   const targetDate = "2025-10-23T00:00:00";
   useEffect(() => {
@@ -15,7 +15,7 @@ export default function Contador() {
   return (
     <div className="sm:h-[900px]  bg-black/90 z-20   w-full">
       <div className="flex flex-col items-center ">
-        <h1  className=" text-white mt-40 text-7xl absolute font-display font-bold z-20  ">
+        <h1  className=" text-white mt-40 text-5xl sm:text-7xl absolute font-display font-bold z-20  ">
           Alex & <br /> Caro
         </h1>
         <div className="absolute  bg-black/20 rounded p-4 flex flex-col justify-center  mt-[500px] z-20  ">

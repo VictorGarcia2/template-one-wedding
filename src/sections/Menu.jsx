@@ -10,7 +10,7 @@ export default function Menu() {
   return (
     <>
       {/* Botón de menú */}
-      <div className="p-2 fixed right-0  z-50">
+      <div className="p-2 fixed right-0  z-40">
         <img
           onClick={() => thisMenu(true)}
           className={`${
